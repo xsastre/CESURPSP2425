@@ -80,7 +80,7 @@ public class ExempleProductoriDosConsumidors {
                 int count = 1;
                 while (true) {
                     sharedResource.produeix("Message " + count++);
-                    Thread.sleep(500); // Simula tiempo entre producciones
+                    Thread.sleep(4500); // Simula tiempo entre producciones
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
