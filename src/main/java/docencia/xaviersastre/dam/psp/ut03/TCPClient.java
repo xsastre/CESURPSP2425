@@ -12,7 +12,7 @@ class TCPClient {
 		BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
 		//Socket clientSocket = new Socket("195.77.81.43", 44014);
 		Socket clientSocket = new Socket();
-		InetSocketAddress addr = new InetSocketAddress("cide.xaviersastre.cat", 44014);
+		InetSocketAddress addr = new InetSocketAddress("nom_dns", 44014);
 		clientSocket.connect(addr);
 		DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
 		BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
